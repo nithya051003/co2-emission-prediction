@@ -23,6 +23,6 @@ fuel_consumption_comb = st.number_input("fuel_consumption_comb", min_value=0.0, 
 
 # Prediction button
 if st.button("Predict CO₂ Emissions"):
-    result = predict_co2_emissions(engine_size, cylinders, fuel_consumption_comb(l/100km))
+    result = predict_co2_emissions(engine_size, cylinders, fuel_consumption_comb)
     st.write(f"Predicted CO₂ Emissions: {result:.2f} g/km")
 
